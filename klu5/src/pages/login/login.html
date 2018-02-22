@@ -1,0 +1,60 @@
+<ion-content padding id="TRACK" class=" manual-remove-top-padding">
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <div style="margin-left: -20px; width: calc(100% + 40px);">
+        <img src="assets/imgs/klubus.png" class="logo" style="display: block; width: 100%; margin-left: auto; margin-right: auto; margin-top: -50px;" />
+    </div>
+    <ion-header>
+
+        <ion-navbar>
+            <ion-title>KLEF BUS TRACKING</ion-title>
+        </ion-navbar>
+
+    </ion-header>
+    <div class="spacer" style="width: 50px; height: 40px;"></div>
+    <ion-card-content>
+        
+        <div padding>
+              
+              
+              <ion-item>
+                <ion-label>Date</ion-label>
+                <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+              </ion-item>
+              <ion-fab bottom middle >
+                <button ion-fab>Share</button>
+                <ion-fab-list side="topleft">
+                  <button ion-fab>guntur</button>
+                  <button ion-fab>tenali</button>
+                </ion-fab-list>
+                <ion-fab-list side="left">
+                  <button ion-fab>Vjwd</button>
+                </ion-fab-list>
+              </ion-fab>
+              <ion-card>
+
+                <ion-card-header>
+                  CITIES
+                </ion-card-header>
+              
+                <ion-card-content>
+                  <button ion-button icon-start (click)="VIJAYAWADA()">
+                    <ion-icon name="bus"></ion-icon>
+                    VIJAYAWADA
+                  </button>
+                  <div class="spacer" style="width: 50px; height: 50px;"></div>
+                  <button ion-button icon-start (click)="TENALI()">
+                    <ion-icon name="bus"></ion-icon>
+                    TENALI
+                  </button>
+                  <div class="spacer" style="width: 50px; height: 50px;"></div>
+                  <button ion-button icon-start>
+                    <ion-icon name="bus"></ion-icon>
+                    GUNTUR
+                  </button>
+                </ion-card-content>
+              
+              </ion-card>
+              
+            </div>
+    </ion-card-content>
+</ion-content>
