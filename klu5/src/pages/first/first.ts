@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import  { MapsPage}  from '../maps/maps';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabase } from 'angularfire2/database';
+import  {TablePage}  from '../table/table';
 /**
  * Generated class for the FirstPage page.
  *
@@ -13,9 +17,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'first.html',
 })
 export class FirstPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+   location :any
+   
+  constructor(public navCtrl: NavController, public navParams: NavParams) { 
   
   }
+  TENALI()
+  {
+    this.navCtrl.push(MapsPage);
+  }
+  TEN()
+  {
+    this.navCtrl.push(TablePage);
+  }
   
+
 }
