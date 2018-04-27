@@ -12,7 +12,14 @@
 
 </ion-header>
 
-
 <ion-content padding>
-hi
+    
+    
+    <agm-map  [latitude]="16.4419" [streetViewControl]="true" [longitude]="80.6225" [mapTypeId]="'hybrid'" [zoom]="15">
+        <ion-item *ngFor="let item of items">
+        <agm-marker [label]="options" [latitude]="item.LATITUDE" [longitude]="item.LONGITUDE" [markerClickable]="true"></agm-marker>
+      </ion-item>
+      </agm-map>
+
+
 </ion-content>
