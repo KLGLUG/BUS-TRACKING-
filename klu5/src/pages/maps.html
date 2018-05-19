@@ -17,6 +17,7 @@
 
     <div padding>
         <button block ion-button  style="padding:0px; width: 100%;" medium (click)="mapUser()">LOCATE ME</button>
+       
     </div>
 
     <agm-map  [latitude]="location?.coords.latitude" [streetViewControl]="true" [longitude]="location?.coords.longitude" [mapTypeId]="'hybrid'" [zoom]="15">
