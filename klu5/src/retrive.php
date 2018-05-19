@@ -23,7 +23,7 @@
 
    // Attempt to query database table and retrieve data
    try {
-      $stmt 	= $pdo->query('SELECT LATITUDE, LONGITUDE FROM routes ');
+      $stmt 	= $pdo->query('SELECT LATITUDE, LONGITUDE FROM routes WHERE sno IN (SELECT MAX(sno) FROM routes)');
       while($row  = $stmt->fetch(PDO::FETCH_OBJ))
       {
          // Assign each row of data to associative array
