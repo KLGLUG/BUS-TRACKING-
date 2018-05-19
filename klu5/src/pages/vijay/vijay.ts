@@ -36,7 +36,9 @@ ite:any;
 
 ionViewWillEnter() : void
    {
+    setInterval(()=>{
       this.load();
+  }, 5000)
      
    }
 
@@ -47,7 +49,7 @@ ionViewWillEnter() : void
     
       let LATITUDE: any
      this.http
-     .get('http://192.168.1.1/mani/retrive.php')
+     .get('http://localhost/mani/retrive.php')
      .subscribe((data : any) =>
      {
         console.log(data);
