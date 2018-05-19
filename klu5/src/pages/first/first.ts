@@ -4,6 +4,7 @@ import  { MapsPage}  from '../maps/maps';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase } from 'angularfire2/database';
 import  {TablePage}  from '../table/table';
+import {LoginPage} from '../login/login';
 /**
  * Generated class for the FirstPage page.
  *
@@ -28,7 +29,7 @@ export class FirstPage {
   }
   TEN()
   {
-    this.navCtrl.push(TablePage);
+    this.navCtrl.push(LoginPage);
   }
   
 
